@@ -48,9 +48,11 @@ int KMPSearch(QString nstring, QString nsubstring){ //в качестве пар
 int main(int argc, char *argv[])
 {
     QString string,str;
-    string = "etotipastroka";
-    str= "ti";
-    cout << KMPSearch(string,str);
+    string = "etotipastroka"; //Текст
+    str= "ti"; // Образец
+    cout << KMPSearch(string,str); /*Вернет первое вхождение в образце
+        В данном случае образец ti начинается с 3 символа строки текста
+        если образцов много то наверное можно зациклить*/
 
     QCoreApplication a(argc, argv);
 
